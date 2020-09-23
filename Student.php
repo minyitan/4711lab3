@@ -11,7 +11,7 @@
  *
  * @author Admin
  */
-
+class Student {
 function __construct() {
 $this->surname = '';
 $this->first_name = '';
@@ -43,6 +43,7 @@ $result .= "\n";
 return '<pre>'.$result.'</pre>';
 }
 
-class Student {
+
     //put your code here
+    
 }
