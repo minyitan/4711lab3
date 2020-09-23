@@ -17,9 +17,12 @@ $this->surname = '';
 $this->first_name = '';
 $this->emails = array();
 $this->grades = array();
+$this->status='';
 }
 
-
+function add_status($status){
+    $this->status=$status;
+}
 function add_email($which,$address) {
 $this->emails[$which] = $address;
 }
@@ -39,6 +42,7 @@ $result = $this->first_name . ' ' . $this->surname;
 $result .= ' ('.$this->average().")\n";
 foreach($this->emails as $which=>$what)
 $result .= $which . ': '. $what. "\n";
+$result .='the stutas is '.$this->status. "\n";
 $result .= "\n";
 return '<pre>'.$result.'</pre>';
 }
